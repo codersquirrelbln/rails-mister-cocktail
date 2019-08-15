@@ -1,0 +1,10 @@
+<h3>Create a new Cocktail</h3>
+
+<%= form_for(@cocktail) do |f| %>
+<div> <%= f.label :name  %>
+  <%= f.text_field :name %>
+</div>
+<%= f.submit %>
+<br><br>
+<%= link_to "Back to Cocktail List", cocktails_path %>
+<% end %>
