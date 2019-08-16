@@ -6,9 +6,9 @@
     <%= dose.description %>
     <% end %>
     </li>
-<br>
-  <%= link_to "Add Ingredient",  new_cocktail_dose_path(@cocktail) %>
-<br>
-  <%= link_to "Back to Cocktail List", cocktails_path %>
+<br></br>
+  <%= link_to "Add Ingredient",  new_cocktail_dose_path(@cocktail), class: 'btn btn-primary'%>
+<br></br>
+  <%= link_to "Back to Cocktail List", cocktails_path, class: 'btn btn-primary' %>
 </ul>
 

@@ -4,5 +4,7 @@
   <%= f.association :ingredient %>
   <%= f.input :description %>
   <%= f.submit 'Add Dose', class: 'btn btn-primary' %>
+ <br></br>
+  <%= link_to "Back to Cocktail", cocktail_path(@cocktail), class: 'btn btn-primary' %>
   <% end %>
   </div>
