@@ -1,11 +1,12 @@
 <h3>Create a new Cocktail</h3>
 
-<%= form_for(@cocktail) do |f| %>
-<div> <%= f.label :name  %>
+<%= simple_form_for(@cocktail) do |f| %>
   <%= f.text_field :name %>
-</div>
-<%= f.submit %>
-<br><br>
-<%= link_to "Back to Cocktail List", cocktails_path, class: 'btn btn-primary'%>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.submit %>
 <% end %>
+<br><br>
+  <%= link_to "Back to Cocktail List", cocktails_path, class: 'btn btn-primary'%>
+
 
