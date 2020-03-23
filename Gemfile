@@ -14,7 +14,12 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'dotenv-rails', groups: [:development, :test]
 # Use Puma as the app server
 
+<<<<<<< HEAD
 gem 'puma', '~> 3.12'
+=======
+gem "puma", ">= 3.12.4"
+
+>>>>>>> master
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
