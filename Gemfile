@@ -14,8 +14,12 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'dotenv-rails', groups: [:development, :test]
 # Use Puma as the app server
 
+<<<<<<< HEAD
+gem 'puma', '~> 3.12'
+=======
 gem "puma", ">= 3.12.4"
 
+>>>>>>> master
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -45,6 +49,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem "rubyzip", ">= 1.3.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
