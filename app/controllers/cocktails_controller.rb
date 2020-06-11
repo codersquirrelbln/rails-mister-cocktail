@@ -8,6 +8,7 @@ class CocktailsController < ApplicationController
   end
 
   def new
+    @placeholder = 'you'
     @cocktail = Cocktail.new
   end
 
